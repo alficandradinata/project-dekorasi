@@ -1,92 +1,171 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UI/UX Designer Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">DesignStudio</a>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Beranda</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#about" class="nav-link">Tentang</a></li>
-                <li><a href="#contact" class="nav-link">Kontak</a></li>
-            </ul>
-        </div>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stark Portfolio | Iron Man Inspired</title>
+    <meta
+      name="description"
+      content="Portofolio mewah bertema Iron Man dengan gaya futuristik, premium, dan modern."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell"></div>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Halo! Saya UI/UX Designer</h1>
-            <p>Menciptakan desain yang indah, intuitif, dan bermakna</p>
-            <button class="cta-button">Lihat Portfolio</button>
+    <header class="topbar">
+      <nav class="navbar container">
+        <div class="brand-wrap">
+          <div class="brand-mark">S</div>
+          <div class="brand-text">
+            <span class="brand-name">Stark</span>
+            <span class="brand-tag">Design Lab</span>
+          </div>
         </div>
-        <div class="hero-image">
-            <div class="placeholder-image"></div>
-        </div>
-    </section>
 
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <h2>Portfolio Terbaru</h2>
-        <div class="portfolio-grid">
-            <div class="portfolio-card">
-                <div class="card-image"></div>
-                <h3>Mobile App Design</h3>
-                <p>Desain aplikasi mobile yang user-friendly</p>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary">Hire Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow">Built for impact</p>
+          <h1>
+            I create <span>digital armor</span><br />
+            for ambitious brands.
+          </h1>
+          <p class="lead">
+            I’m a product designer and creative technologist crafting premium digital
+            experiences with sharp strategy, cinematic visuals, and user-centered systems.
+          </p>
+
+          <div class="cta-row">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#about" class="btn btn-secondary">About Me</a>
+          </div>
+
+          <div class="stat-row">
+            <div class="stat-item">
+              <strong>7+</strong>
+              <span>Years Experience</span>
             </div>
-            <div class="portfolio-card">
-                <div class="card-image"></div>
-                <h3>Website Redesign</h3>
-                <p>Modernisasi website dengan UI/UX terbaru</p>
+            <div class="stat-item">
+              <strong>40+</strong>
+              <span>Launches</span>
             </div>
-            <div class="portfolio-card">
-                <div class="card-image"></div>
-                <h3>Design System</h3>
-                <p>Membuat design system yang konsisten</p>
+            <div class="stat-item">
+              <strong>12</strong>
+              <span>Awards</span>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>Tentang Saya</h2>
-        <div class="about-content">
-            <p>Saya adalah UI/UX Designer dengan pengalaman lebih dari 5 tahun dalam menciptakan desain digital yang berdampak. Saya percaya bahwa desain yang baik adalah desain yang menggabungkan estetika dan fungsionalitas.</p>
-            <div class="skills">
-                <h3>Keahlian</h3>
-                <ul>
-                    <li>UI/UX Design</li>
-                    <li>Wireframing & Prototyping</li>
-                    <li>User Research</li>
-                    <li>Design System</li>
-                    <li>Figma & Sketch</li>
-                    <li>Web Design</li>
-                </ul>
+        <div class="hero-visual" aria-label="Futuristic armored dashboard illustration">
+          <div class="visor-core">
+            <div class="visor-ring ring-one"></div>
+            <div class="visor-ring ring-two"></div>
+            <div class="visor-center">
+              <div class="center-glow"></div>
             </div>
+          </div>
+
+          <div class="floating-panel panel-left">
+            <span>Brand Systems</span>
+            <strong>03</strong>
+          </div>
+
+          <div class="floating-panel panel-right">
+            <span>Performance</span>
+            <strong>98%</strong>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Hubungi Saya</h2>
-        <form class="contact-form">
-            <input type="text" placeholder="Nama" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Pesan" rows="5" required></textarea>
-            <button type="submit" class="submit-button">Kirim</button>
-        </form>
-    </section>
+      <section class="projects container" id="projects">
+        <div class="section-head">
+          <p class="eyebrow">Selected work</p>
+          <h2>Featured builds</h2>
+        </div>
 
-    <!-- Footer -->
+        <div class="project-grid">
+          <article class="project-card card-one">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <span class="project-tag">Luxury Startup</span>
+              <h3>Apex Motors</h3>
+              <p>High-performance brand system and launch campaign for premium EV experience.</p>
+            </div>
+          </article>
+
+          <article class="project-card card-two">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <span class="project-tag">SaaS Platform</span>
+              <h3>Helios Cloud</h3>
+              <p>Conversion-focused interface with a minimal, data-driven engine for B2B growth.</p>
+            </div>
+          </article>
+
+          <article class="project-card card-three">
+            <div class="project-image"></div>
+            <div class="project-info">
+              <span class="project-tag">E-commerce</span>
+              <h3>Ironline Store</h3>
+              <p>Premium storefront design engineered for velocity, trust, and elevated UX.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about container" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">Why me</p>
+          <h2>Designing experiences with precision and presence.</h2>
+          <p>
+            I blend strategy, storytelling, and modern interface design to turn product ideas into
+            magnetic digital experiences. Every project is shaped to feel premium, intuitive, and built
+            for measurable growth.
+          </p>
+        </div>
+
+        <div class="skills-panel">
+          <div class="skill-item"><span>UX Strategy</span><strong>01</strong></div>
+          <div class="skill-item"><span>UI Systems</span><strong>02</strong></div>
+          <div class="skill-item"><span>Brand Design</span><strong>03</strong></div>
+          <div class="skill-item"><span>Prototyping</span><strong>04</strong></div>
+          <div class="skill-item"><span>Motion</span><strong>05</strong></div>
+          <div class="skill-item"><span>Research</span><strong>06</strong></div>
+        </div>
+      </section>
+
+      <section class="contact container" id="contact">
+        <div class="contact-card">
+          <p class="eyebrow">Let’s build</p>
+          <h2>Need a digital identity that feels like a flagship launch?</h2>
+          <a href="mailto:hello@starkdesignlab.com" class="btn btn-primary">hello@starkdesignlab.com</a>
+        </div>
+      </section>
+    </main>
+
     <footer class="footer">
-        <p>&copy; 2026 UI/UX Designer. Semua hak cipta dilindungi.</p>
+      <div class="container footer-inner">
+        <span>© 2026 Stark Design Lab</span>
+        <span>Powered by precision.</span>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
